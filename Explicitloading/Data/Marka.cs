@@ -13,6 +13,6 @@ namespace Explicitloading.Data
 
         [MaxLength(50)]
         public string Ad { get; set; } = null!;
-        public List<Model> Modeller { get; set; } = null!;
+        public List<Model> Modeller { get; set; } = new();
     }
 }

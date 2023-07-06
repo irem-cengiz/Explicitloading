@@ -10,7 +10,6 @@ namespace Explicitloading.Data
     public class Model
     {
         public int Id { get; set; }
-
         [MaxLength(50)]
         public string Ad { get; set; } = null!;
         public Marka Marka { get; set; } = null!;

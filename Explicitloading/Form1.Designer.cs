@@ -28,12 +28,69 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            cmbMarkalar = new ComboBox();
+            label1 = new Label();
+            lstModeller = new ListBox();
+            Modeller = new Label();
+            SuspendLayout();
+            // 
+            // cmbMarkalar
+            // 
+            cmbMarkalar.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbMarkalar.FormattingEnabled = true;
+            cmbMarkalar.Location = new Point(36, 86);
+            cmbMarkalar.Name = "cmbMarkalar";
+            cmbMarkalar.Size = new Size(166, 23);
+            cmbMarkalar.TabIndex = 0;
+            cmbMarkalar.SelectedIndexChanged += cmbMarkalar_SelectedIndexChanged;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(36, 52);
+            label1.Name = "label1";
+            label1.Size = new Size(81, 15);
+            label1.TabIndex = 1;
+            label1.Text = "Marka seçiniz:";
+            // 
+            // lstModeller
+            // 
+            lstModeller.FormattingEnabled = true;
+            lstModeller.ItemHeight = 15;
+            lstModeller.Location = new Point(36, 150);
+            lstModeller.Name = "lstModeller";
+            lstModeller.Size = new Size(634, 304);
+            lstModeller.TabIndex = 2;
+            // 
+            // Modeller
+            // 
+            Modeller.AutoSize = true;
+            Modeller.Location = new Point(36, 132);
+            Modeller.Name = "Modeller";
+            Modeller.Size = new Size(54, 15);
+            Modeller.TabIndex = 3;
+            Modeller.Text = "Modeller";
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(703, 471);
+            Controls.Add(Modeller);
+            Controls.Add(lstModeller);
+            Controls.Add(label1);
+            Controls.Add(cmbMarkalar);
+            Name = "Form1";
+            Text = "Araba Markaları";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private ComboBox cmbMarkalar;
+        private Label label1;
+        private ListBox lstModeller;
+        private Label Modeller;
     }
 }
